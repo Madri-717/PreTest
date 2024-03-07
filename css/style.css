@@ -1,0 +1,311 @@
+/********** Template CSS **********/
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+  }
+  
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+.navbar a:last-child {
+    margin-right: 0;
+  }  
+
+/*** Section Header ***/
+.section-header {
+    position: relative;
+    padding-top: 25px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+/* Carousel */
+.carousel-caption{
+    text-align: left;
+    padding: 360px;
+    left: -180px;
+    margin-left: 0%;
+}
+ 
+.carousel-caption h5 {
+    font-size: 60px;
+  }
+  
+.carousel-caption button {
+    margin-top: 10px; 
+    color: white;
+  }
+
+/* Mejores Frutas */
+  
+.Container-MF {
+    width: 100%;
+    height: 700px;    
+    padding: 90px;
+    padding-top: 150px;
+}
+
+.Container-MF .MF-main .col-md-6{
+    float: left;
+    width: 50%;
+}
+
+.Container-MF .MF-main .col-md-6 h1{
+    float: left;
+    margin-left: 0px;
+    font-size: 60px;
+}
+
+.Container-MF .MF-main .col-md-6 .image_1{
+   border-radius: 50%;
+   margin: auto;
+   width: 350px;
+   padding: 10px;
+}
+
+.Container-MF .MF-main .col-md-6 .button{
+    border-radius: 100px;
+    background-color: #3CB815;
+    color: white;
+    width: 30%;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+    padding: 10px 0px;
+}
+
+/* Nos caracteriza */
+.nos_section{
+    float: left;
+    width: 100%;
+    padding-bottom: 90px;
+    padding-top: 80px;
+    text-align: center;
+    background-color: #e2edef;
+}
+
+.nos_section2{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    height: auto;
+}
+
+.nos_section2 .col-article{
+   float: left;
+   margin: 10px;
+   background-color: white;
+   text-align: center;  
+}
+
+.icon_1{
+    size-adjust: 20px;
+    text-align: center;
+}
+
+.P1_text{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #090808;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.P2_text{
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    color: #090808;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.read_bt_main{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.read_bt{
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.read_bt a{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #3CB815;
+    background-color: white;
+    border: 2px solid #3CB815;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+.read_bt a:hover{
+    color: #ffffff;
+    background-color: #000;
+}
+
+.Header-Productos{
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.list{
+   display: inline;
+}
+
+.option{
+    width: 70%;
+    height: auto;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    border: 2px solid #3CB815;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.flex-Productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Descripcion1{
+    width: 100%;
+    text-align: center;
+}
+
+.Descripcion2{
+    width: 100%;
+    text-align: center;
+}
+
+/* Secccion Visita */
+.Container-Visita{
+    width: 100%;
+    height: 300px;
+    padding: 90px;    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3CB815;
+    color: white;
+    margin: 0 0;
+}
+
+.Main-Visita{
+    display: inline;
+}
+
+.Container-Visita .col-md-6{
+    float:left;
+    text-align: center;
+}
+
+.Boton-Visita{
+    color: white;
+    float: right;
+    background-color: #F65005;
+    border-radius: 15px;
+}
+
+/* Footer */
+.principal-footer{
+    background-color: #090808;
+    margin-top: 20px;
+}
+
+.secundario-footer{
+    padding-top: 40px;  
+}
+
+.sec-titulo{
+    color: #f7f0f3;
+}
+
+.th-titulo{
+    color: #f7f0f3;
+}
+
+.third-footer .btn-footer{
+    display: block;
+    margin-right: 140px;
+}
+
+
+/* Metodos Responsivos */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    nav ul li {
+        display:grid;
+        border-bottom: solid #fff;
+        text-align: center;
+    }
+
+    aside,
+    nav,
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-content {
+        display:grid;
+        text-align:center;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
